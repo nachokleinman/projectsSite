@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <title>Projects | Nacho Kleinman</title>
     <meta name="generator" content="Jekyll v3.9.0" />
     <meta property="og:title" content="Projects" />
@@ -17,13 +17,11 @@
     <meta name="description" content="Data Scientist" />
     <meta property="og:description" content="Data Scientist" />
     <link rel="canonical" href="http://localhost:4000/projects.html" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta property="og:url" content="http://localhost:4000/projects.html" />
     <meta property="og:site_name" content="Ignacio Kleinman Ruiz" />
     <meta name="twitter:card" content="summary" />
     <meta property="twitter:title" content="Projects" />
     <script type="application/ld+json">
-        
     {"url":"http://localhost:4000/projects.html","headline":"Projects","description":"Data Scientist","@type":"WebPage","@context":"https://schema.org"}</script>
 
     {% include head-custom.html %}
@@ -35,21 +33,24 @@
   <body>
     <div class="wrapper">
         <header>
-          <h1><a href="{{ "/" | absolute_url }}">Nacho Kleinman</a></h1>
+          <h1><a href="{{ "/" | absolute_url }}">Alberto García Hernández</a></h1>
           <h3>Data Scientist</h3>
           <!-- <p> Machine Learning | NLP | Statistics | Software Engineering | Economics</p> -->
           <p class=bio>
-            International profile with experiences and studies abroad (Finland and New Zealand). Customer obsessed software engineer with experience leading teams, specialized in product design and product owner through agile and SCRUM, using last technologies to solve problems. Always focused on feedback and communication. Good response working under pressure.
+            Data Scientist with 3 years of experience with expertise in Time Series Forecasting and 
+            NLP. Skilled in developing production level code to build and deploy
+            (CI/CD) data products. Proficient in Python, NLP, SQL, TensorFlow, Keras, Spark and statistics. 
           </p>
   
           <div>
-            <img src="/assets/img/profile.jpg" alt="Profile" />
+            <img src="profile.jpg" alt="Profile" />
           </div>
           
   
           <ul class="menu-buttons">
-            <li></li><i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/igkleinman/">LinkedIn</a></i></li>
-            <li></li><i class="fab fa-github-square"><a href="http://www.github.com/nachokleinman">GitHub</a></i></li>
+            <i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/igkleinman/">LinkedIn</a></i>
+            <i class="fab fa-github-square"><a href="http://www.github.com/nachokleinman">GitHub</a></i>
+            <li></li>
           </ul>
         </header>
         <section class=center>
