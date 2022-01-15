@@ -13,15 +13,40 @@
     {% include head-custom.html %}
   </head>
   <body>
-    <header class="page-header"  
-    role="banner">
-  <h1 class="project-name">Areg Sarkissian</h1>
-</header>
-<main id="content" class="main-content" role="main">
-   {{ content }}
-  <footer class="site-footer">
-    &copy; 2019 Areg Sarkissian
-  </footer>
-</main>
+    <div class="wrapper">
+        <header>
+          <h1><a href="{{ "/" | absolute_url }}">Alberto García Hernández</a></h1>
+          <h3>Data Scientist</h3>
+          <!-- <p> Machine Learning | NLP | Statistics | Software Engineering | Economics</p> -->
+          <p class=bio>
+            Data Scientist with 3 years of experience with expertise in Time Series Forecasting and 
+            NLP. Skilled in developing production level code to build and deploy
+            (CI/CD) data products. Proficient in Python, NLP, SQL, TensorFlow, Keras, Spark and statistics. 
+          </p>
+  
+          <div>
+            <img src="{{site.profile | relative_url}}" alt="Profile" />
+          </div>
+          
+  
+          <ul class="menu-buttons">
+            <li><a href="https://www.linkedin.com/in/albergar2/">LinkedIn</a></li>
+            <li><a href="http://www.github.com/albergar2">GitHub</a></li>
+            <li><a href="http://www.github.com/albergar2">Projects</a></li>
+          </ul>
+  
+          
+          
+        </header>
+        <section class=center>
+  
+        {{ content }}
+  
+        </section>
+        <footer>
+          
+        </footer>
+      </div>
+      <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
 </html>
